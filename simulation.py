@@ -128,9 +128,9 @@ theta_estimates = np.array(theta_estimates)
 mean_estimate = theta_estimates.mean()
 bias = mean_estimate - THETA0
 
-print(f"{'Number of simulations':30s} {len(theta_estimates)}")
-print(f"{'Sample size n':30s} {N}")
-print(f"{'True parameter theta0':30s} {THETA0}")
-print(f"{'Mean of estimates':30s} {mean_estimate:.4f}")
-print(f"{'Bias':30s} {bias:.4f}")
+print('Number of simulations', len(theta_estimates))
+print('Sample size n', N)
+print('True parameter theta0', THETA0)
+print('Mean of estimates', round(mean_estimate,4))
+print('Bias', round(bias,4))
 
